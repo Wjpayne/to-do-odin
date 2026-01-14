@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,30 @@
   </head>
   <body>
     <div id="app">
+      <aside id="sidebar">
+        <h2>Projects</h2>
+        <ul id="project-list"></ul>
+        <input id="project-input" placeholder="New project" />
+        <button id="add-project">Add Project</button>
+      </aside>
+
+      <main>
+        <h2 id="current-project"></h2>
+
+        <div id="todo-form">
+          <input id="todo-title" placeholder="Todo title" />
+          <input id="todo-date" type="date" />
+          <select id="todo-priority">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+          </select>
+          <button id="add-todo">Add Todo</button>
+        </div>
+
+        <ul id="todo-list"></ul>
+      </main>
+
       <!-- App content will be injected here by JavaScript -->
     </div>
     <script type="module" src="/src/main.js"></script>
