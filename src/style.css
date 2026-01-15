@@ -157,9 +157,12 @@ main {
     display: flex;
   }
 
-input[type="date"] {
+#todo-date  {
+  position:relative;
+  z-index:1000 !important;
   display: block;
   appearance: textfield;
+  width: 200px;
 }
 
   #project-list li {
