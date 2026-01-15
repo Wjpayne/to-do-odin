@@ -42,9 +42,16 @@ dom.render();
 
 document.getElementById("add-project").onclick = () => {
   const input = document.getElementById("project-input");
-  if (!input.value) return;
-  const project = new Project(input.value);
+  const name = input.value.trim();
+
+  if (!name) return;
+
+  const project = new Project(name);
   projects.push(project);
+
+  // ✅ ALWAYS select the newly created project
+  state.currentProject = project;
+
   save(projects);
   input.value = "";
   dom.render();
