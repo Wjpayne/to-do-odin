@@ -19,14 +19,14 @@
         <h2 id="current-project"></h2>
 
         <div id="todo-form">
-          <input id="todo-title" placeholder="Todo title" />
-          <input id="todo-date" type="date" />
-          <select id="todo-priority">
+          <input id="todo-title" placeholder="Todo title" required/>
+          <input id="todo-date" type="date" min="" required />
+          <select id="todo-priority" required>
             <option>Low</option>
             <option>Medium</option>
             <option>High</option>
           </select>
-          <button id="add-todo">Add Todo</button>
+          <button id="add-todo" type = "submit">Add Todo</button>
         </div>
 
         <ul id="todo-list"></ul>
