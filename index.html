@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <title>to-do-odin</title>
   </head>
   <body>
@@ -19,20 +23,18 @@
         <h2 id="current-project"></h2>
 
         <div id="todo-form">
-          <input id="todo-title" placeholder="Todo title" required/>
+          <input id="todo-title" placeholder="Todo title" required />
           <input id="todo-date" type="date" min="" required />
           <select id="todo-priority" required>
             <option>Low</option>
             <option>Medium</option>
             <option>High</option>
           </select>
-          <button id="add-todo" type = "submit">Add Todo</button>
+          <button id="add-todo" type="submit">Add Todo</button>
         </div>
 
         <ul id="todo-list"></ul>
       </main>
-
-      
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
