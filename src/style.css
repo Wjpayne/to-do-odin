@@ -157,14 +157,10 @@ main {
     display: flex;
   }
 
-  #todo-date {
-    display: block;
-    margin-left: 0.5rem;
-    height: 1.4rem;
-    z-index: 1000 !important;
-    appearance: none;
-    border: 0.5px solid gray;
-  }
+input[type="date"] {
+  display: block;
+  appearance: textfield;
+}
 
   #project-list li {
     white-space: nowrap;
