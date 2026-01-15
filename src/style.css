@@ -6,9 +6,16 @@ input[type="submit"],
 input[type="reset"] {
   -webkit-appearance: none;
   appearance: none;
-  background: none;
+  background-color: darkgrey;
+  color: black;
   border: none;
-  border-radius: 0;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1;
+  -webkit-tap-highlight-color: transparent;
 }
 
 * {
@@ -171,8 +178,8 @@ main {
   button {
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
-    background-color: #111827;
-    color: white;
+    background-color: darkgrey;
+    color: black;
     padding: 0.6rem 1rem;
     border-radius: 6px;
     font-weight: 600;
@@ -180,10 +187,7 @@ main {
     line-height: 1;
   }
 
-  button:focus-visible {
-    outline: 2px solid #2563eb;
-    outline-offset: 2px;
-  }
+
 
   * {
     -webkit-overflow-scrolling: touch;
