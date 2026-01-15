@@ -160,9 +160,20 @@ main {
 #todo-date  {
   position:relative;
   z-index:1000 !important;
-  display: block;
   appearance: textfield;
-  width: 200px;
+  margin:0;
+  content: attr(placeholder) !important;
+}
+
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #aaa; /* Customize color */
+  margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
 }
 
   #project-list li {
