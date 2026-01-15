@@ -80,7 +80,7 @@ main {
   background: white;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
-  border-left: 6px solid gray; 
+  border-left: 6px solid gray;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -101,7 +101,7 @@ main {
   height: 1.4rem;
   z-index: 1000 !important;
   appearance: none;
-  border: .5px solid gray;
+  border: 0.5px solid gray;
 }
 
 .priority-high {
@@ -155,6 +155,15 @@ main {
 @media (max-width: 400px) {
   #project-list {
     display: flex;
+  }
+
+  #todo-date {
+    display: block;
+    margin-left: 0.5rem;
+    height: 1.4rem;
+    z-index: 1000 !important;
+    appearance: none;
+    border: 0.5px solid gray;
   }
 
   #project-list li {
