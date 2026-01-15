@@ -80,30 +80,28 @@ main {
   background: white;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
-  border-left: 6px solid gray; /* fallback */
+  border-left: 6px solid gray; 
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-#todo-list {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0 0;
-}
-
-#todo-list input {
-  margin-right: 0.2rem;
-}
-
-#todo-list select {
-  margin-left: 0.6rem;
 }
 
 #todo-list button {
   background: transparent;
   font-weight: bold;
   border: none;
+}
+#todo-title {
+  height: 1.5rem;
+  padding-bottom: 2px;
+}
+
+#todo-date {
+  margin-left: 0.5rem;
+  height: 1.4rem;
+  z-index: 1000 !important;
+  appearance: none;
+  border: .5px solid gray;
 }
 
 .priority-high {
@@ -186,8 +184,6 @@ main {
     cursor: pointer;
     line-height: 1;
   }
-
-
 
   * {
     -webkit-overflow-scrolling: touch;
