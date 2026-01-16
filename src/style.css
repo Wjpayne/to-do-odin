@@ -16,7 +16,19 @@ input[type="reset"] {
   cursor: pointer;
   line-height: 1;
   -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
+
+input[type="date"] {
+  -webkit-appearance: auto;
+  appearance: auto;
+}
+select {
+  -webkit-appearance: auto;
+  appearance: auto;
+}
+
+/* Global Styles */
 
 * {
   box-sizing: border-box;
@@ -28,22 +40,6 @@ input[type="reset"] {
   padding-bottom: env(safe-area-inset-bottom);
 }
 
-#app {
-  display: flex;
-  min-height: 100dvh; /* dynamic viewport for mobile */
-}
-
-button {
-  cursor: pointer;
-  background-color: grey;
-  color: black;
-  padding: 0.6rem 1rem;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  line-height: 1;
-}
-
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
@@ -52,7 +48,7 @@ body {
 
 #app {
   display: flex;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 #sidebar {
@@ -99,8 +95,6 @@ main {
 #todo-date {
   margin-left: 0.5rem;
   height: 1.4rem;
-  z-index: 1000 !important;
-  appearance: none;
   border: 0.5px solid gray;
 }
 
@@ -157,14 +151,10 @@ main {
     display: flex;
   }
 
-#todo-date  {
-  position:relative;
-  z-index:1000 !important;
-  appearance: textfield;
-  margin:0;
-  content: attr(placeholder) !important;
-}
-
+  #todo-date {
+    position: relative;
+    margin: 0;
+  }
 
   #project-list li {
     white-space: nowrap;
@@ -182,21 +172,6 @@ main {
     word-break: break-word;
   }
 
-  button {
-    -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
-    background-color: darkgrey;
-    color: black;
-    padding: 0.6rem 1rem;
-    border-radius: 6px;
-    font-weight: 600;
-    cursor: pointer;
-    line-height: 1;
-  }
-
-  * {
-    -webkit-overflow-scrolling: touch;
-  }
 
   html {
     touch-action: pan-x pan-y;
