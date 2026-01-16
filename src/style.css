@@ -1,3 +1,4 @@
+
 /* iOS safari fixes */
 
 button,
@@ -147,9 +148,6 @@ main {
 }
 
 @media (max-width: 400px) {
-  #project-list {
-    display: flex;
-  }
 
   #todo-date {
     position: relative;
@@ -175,5 +173,59 @@ main {
 
   html {
     touch-action: pan-x pan-y;
+  }
+}
+
+
+@supports (-webkit-touch-callout: none) {
+
+  /* --- Restore native controls --- */
+  input[type="date"] {
+    -webkit-appearance: auto;
+    appearance: auto;
+    font-size: 16px; /* prevents zoom */
+  }
+
+  select {
+    -webkit-appearance: auto;
+    appearance: auto;
+    font-size: 16px;
+    background-color: white;
+  }
+
+  /* --- Prevent Safari blue UI + tap delay --- */
+  button,
+  input[type="submit"],
+  input[type="button"] {
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  /* --- Fix iOS focus / click issues --- */
+  input,
+  select,
+  button {
+    outline: none;
+  }
+
+  /* --- Prevent accidental zoom on focus --- */
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  /* --- Fix 100vh bug on iOS --- */
+  #app {
+    min-height: 100dvh;
+  }
+
+  /* --- Ensure form controls are tappable --- */
+  input,
+  select,
+  button {
+    min-height: 44px;
   }
 }
