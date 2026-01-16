@@ -9,8 +9,8 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <title>to-do-odin</title>
-    <script type="module" crossorigin src="/to-do-odin/assets/index-BPUNXojz.js"></script>
-    <link rel="stylesheet" crossorigin href="/to-do-odin/assets/index-CUq3SLPV.css">
+    <script type="module" crossorigin src="/to-do-odin/assets/index-Bik6dbTr.js"></script>
+    <link rel="stylesheet" crossorigin href="/to-do-odin/assets/index-CWaOWucW.css">
   </head>
   <body>
     <div id="app">
@@ -26,11 +26,11 @@
 
         <form id="todo-form">
           <input id="todo-title" placeholder="To-do title" required />
-          <input id="todo-date" type="date" min="" required />
-          <select id="todo-priority" required>
-            <option>Low</option>
-            <option>Medium</option>
-            <option>High</option>
+          <input id="todo-date" type="date" name="todo-date" required />
+          <select id="todo-priority" name="todo-priority" required>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
           </select>
           <button id="add-todo" type="submit">Add To-Do</button>
         </form>
